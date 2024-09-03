@@ -70,6 +70,7 @@ To add parameters to control the robot arm, publish a joint trajectory using the
 ```
 ros2 topic pub -1 /set_joint_trajectory trajectory_msgs/msg/JointTrajectory '{header: {frame_id: "basefoot_link"}, joint_names: ["arm_base_forearm_joint", "forearm_hand_joint"], points: [ {positions: {0.0, 0.3}} ]}'
 ```
+P.S: Feel free to change the positions as per your experiment
 
 ### Control the arm
 To control the mobile robot's movement, use the following command to publish velocity commands:
@@ -77,6 +78,7 @@ To control the mobile robot's movement, use the following command to publish vel
 ```
 ros2 topic pub /cmd_vel geometry_msgs/msg/Twist '{linear: {x: 0.2}}'
 ```
+P.S: Feel free to change the linear as well as angular, as per your experiment
 
 
 ## Troubleshooting
@@ -86,4 +88,4 @@ ros2 topic pub /cmd_vel geometry_msgs/msg/Twist '{linear: {x: 0.2}}'
 
 ## License
 License
-This project is licensed under the [License](License). See the LICENSE file for more details.
+This project is licensed under the [License](LICENSE). See the LICENSE file for more details.
