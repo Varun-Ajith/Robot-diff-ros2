@@ -81,6 +81,9 @@ ros2 topic pub /cmd_vel geometry_msgs/msg/Twist '{linear: {x: 0.2}}'
 P.S: Feel free to change the linear as well as angular, as per your experiment
 
 
+![Robot in gazebo](gazebo.gif)
+
+
 ## Troubleshooting
 - **Build Errors: Ensure all dependencies are correctly installed and sourced by running `source /install/setup.bash`.
 - **RViz Issues: Verify that the RViz configuration file paths are correct in the launch files.
